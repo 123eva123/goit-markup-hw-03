@@ -22,6 +22,9 @@ ol {
   margin: 0;
   padding-left: 0;
 }
+img {
+  display: block;
+}
 body {
   background-color: var(--white-color);
   color: var(--primary-text-color);
@@ -32,14 +35,17 @@ body {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
   margin: 0 auto;
 }
 .header {
   padding-bottom: 24px;
   padding-top: 24px;
-  border-bottom: 1px solid #e7e9fc;
-}
+  border-bottom: 1px solid #e7e9fc; }
+
+  .header > .container {
+    display: flex;
+
+  }
 .list {
   list-style: none;
 }
@@ -53,12 +59,16 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+  margin-right: 76px;
 }
 .logo-web {
   color: var(--accent-color);
 }
 .site-nav {
   display: flex;
+  align-items: center;
+  margin-right: auto;
+  gap: 40px;
 }
 
 .site-nav .link {
@@ -69,6 +79,8 @@ body {
 .site-nav .link.current {
   color: var(--accent-color);
 }
+
+
 .site-nav .link:hover,
 .site-nav .link:focus,
 .address .link:hover,
@@ -76,6 +88,11 @@ body {
 .logo:hover,
 .logo:focus {
   color: var(--accent-color);
+}
+
+.address {
+  display: flex;
+  gap: 40px;
 }
 .address .link {
   color: var(--primary-text-color);
@@ -89,24 +106,34 @@ body {
   background-color: var(--title-text-color);
   color: var(--white-color);
   text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
+
 .hero .hero-title {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  margin-bottom: 64px;
-  padding: 188px 317px 0 317px; /*перепроверить*/
+  margin-bottom: 48px;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;  
 }
 .hero .button {
   background-color: var(--accent-color);
   color: var(--white-color);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   font-family: inherit;
   cursor: pointer;
+  min-width: 169px;
+height: 56px;
+border-radius: 4px;
+border: none;
+
 }
 .hero .button:hover,
 .hero .button:focus {
@@ -136,7 +163,11 @@ body {
 }
 .advantages-list {
   padding-top: 120px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
+
 .project-list .link-text {
   color: var(--primary-text-color);
 }
@@ -154,11 +185,18 @@ body {
   letter-spacing: 0.04em;
   font-weight: 600;
   cursor: pointer;
+  display: flex;
+  padding: 12px 24px;
+  border: 1px solid #E7E9FC;
+border-radius: 4px;
 }
 
 .button-list {
   padding-top: 108px;
   margin-bottom: 84px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 
 .button-list .button:hover,
@@ -174,25 +212,58 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+.project-card {
+  width: 360px;
+  border: 1px solid #E7E9FC;
+}
 .project-list {
   padding-bottom: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
 }
 .team-list {
   padding-bottom: 120px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.team-card {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .doing-list {
   padding-bottom: 120px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.doing-card {
+  border: 1px solid #E7E9FC;
+  width: 360px;
 }
 .footer {
   background-color: var(--primary-text-color);
   color: var(--footer-text-coclor);
   padding-top: 100px;
   padding-bottom: 100px;
+  
+  
 }
+
 .footer-logo {
   color: var(--background-secondary-section);
+  
 }
 
 .footer .logo {
+  display: block;
   margin-bottom: 16px;
+}
+.footer-text {
+  display: inline-block;
+  max-width: 264px;
 }
