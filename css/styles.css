@@ -223,7 +223,8 @@ body {
   padding-bottom: 120px;
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 .team-list {
   padding-bottom: 120px;
