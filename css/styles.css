@@ -24,6 +24,8 @@ ol {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 body {
   background-color: var(--white-color);
@@ -213,7 +215,7 @@ body {
 }
 
 .project-card {
-  width: 360px;
+  width: calc((100% - 48px)/3);
 }
 .project-card .card-text {
   border-bottom: 1px solid #e7e9fc;
@@ -226,6 +228,7 @@ body {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+  
 }
 .team-list {
   padding-bottom: 120px;
@@ -237,6 +240,7 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 72px)/4);
 }
 .doing-list {
   padding-bottom: 120px;
@@ -246,7 +250,7 @@ body {
 }
 .doing-card {
   border: 1px solid #e7e9fc;
-  width: 360px;
+  width: calc((100% - 48px)/3);
 }
 .footer {
   background-color: var(--primary-text-color);
