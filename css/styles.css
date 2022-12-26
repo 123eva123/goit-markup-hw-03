@@ -223,13 +223,11 @@ body {
   padding-bottom: 120px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 24px;
 }
 .team-list {
   padding-bottom: 120px;
   display: flex;
-  justify-content: center;
   gap: 24px;
 }
 
