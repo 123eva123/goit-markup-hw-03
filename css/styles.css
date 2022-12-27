@@ -179,6 +179,7 @@ body {
 }
 .advantages-list .text {
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .project-list .link-text {
@@ -279,4 +280,5 @@ body {
   display: inline-block;
   max-width: 264px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
