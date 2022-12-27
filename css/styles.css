@@ -147,8 +147,7 @@ body {
   text-transform: capitalize;
   text-align: center;
   letter-spacing: 0.02em;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .advantages-list .title,
@@ -161,11 +160,25 @@ body {
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
-.advantages-list {
+.section-padding {
   padding-top: 120px;
+  padding-bottom: 120px;
+}
+.advantages-padding {
+  padding-top: 120px;
+}
+.portfolio-padding {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.advantages-list {
   display: flex;
   justify-content: center;
   gap: 24px;
+}
+.advantages-list .text {
+  line-height: 1.5;
 }
 
 .project-list .link-text {
@@ -192,7 +205,6 @@ body {
 }
 
 .button-list {
-  padding-top: 96px;
   margin-bottom: 72px;
   display: flex;
   justify-content: center;
@@ -211,7 +223,6 @@ body {
 .card-text {
   padding-top: 32px;
   padding-bottom: 32px;
-  padding-left: 16px;
 }
 
 .project-card {
@@ -221,16 +232,15 @@ body {
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
+  padding-left: 16px;
 }
 .project-list {
-  padding-bottom: 120px;
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
 }
 .team-list {
-  padding-bottom: 120px;
   display: flex;
   gap: 24px;
 }
@@ -242,7 +252,6 @@ body {
   width: calc((100% - 72px) / 4);
 }
 .doing-list {
-  padding-bottom: 120px;
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -269,4 +278,5 @@ body {
 .footer-text {
   display: inline-block;
   max-width: 264px;
+  line-height: 1.5;
 }
